@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish-gitpages": "ng build --prod --baseHref='https://florinasavei.github.io/'"
+    "publish-gitpages": "ng build --prod --baseHref='https://florinasavei.github.io/'",
+    "deploy-gitpages": "npx angular-cli-ghpages --dir=dist/my-presentation"
   },
   "private": true,
   "dependencies": {
