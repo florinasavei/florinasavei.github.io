@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@asaveiflorin/core-components": [
+        "packages/@asaveiflorin/core-components/src/index.ts"
+      ],
+      "core-components": ["packages/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
