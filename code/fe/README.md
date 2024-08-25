@@ -6,8 +6,6 @@ Steps to init the FE monorepo:
 
 - yarn cache clean
 
-mkdir portfolio
-cd portfolio
 
  package.json file and add the following workspaces configuration:
 {
@@ -18,8 +16,12 @@ cd portfolio
   ]
 }
 
-mkdir apps packages
-
 yarn add -D nx @nrwl/workspace
 
 yarn nx init --skipGit
+
+yarn nx generate @nrwl/react:application apps/landing-page --bundler=vite --style=tailwind
+
+yarn nx show projects
+
+yarn nx serve landing-page
