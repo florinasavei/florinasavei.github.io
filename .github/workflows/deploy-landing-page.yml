@@ -39,6 +39,9 @@ jobs:
 
       - name: List dist folder
         run: ls dist/apps/landing-page
+        
+      - name: move back to workspace
+        run: cd /code/fe/portfolio
 
       - name: Deploy to GitHub Pages
         run: yarn nx deploy landing-page
