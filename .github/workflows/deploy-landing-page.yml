@@ -31,6 +31,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Configure Git for Deployment
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+
       - name: Build the app
         run: yarn nx build landing-page
 
