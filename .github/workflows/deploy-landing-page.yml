@@ -41,7 +41,8 @@ jobs:
         run: ls dist/apps/landing-page
 
       - name: Deploy to GitHub Pages
-        run: yarn nx deploy landing-page
-        working-directory: cd ../../ && code/fe/portfolio
+        run: |
+         cd ../../
+         yarn nx deploy landing-page
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
