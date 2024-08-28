@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy Landing Page to GitHub Pages
 
 on:
   push:
     branches:
-      - '**'  # Change this to your default branch if it's not `main`
+      - 'base' 
 
 jobs:
   build-and-deploy:
@@ -49,6 +49,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-         yarn nx deploy landing-page
+         yarn nx deploy:gh-pages landing-page
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
