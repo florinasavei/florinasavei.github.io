@@ -40,15 +40,8 @@ jobs:
       - name: List dist folder
         run: ls dist/apps/landing-page
 
-        
-      - name: move back
-        run: cd ../../
-        
-      - name: List current folder
-        run: ls
-
       - name: Deploy to GitHub Pages
         run: yarn nx deploy landing-page
-        working-directory: code/fe/portfolio
+        working-directory: cd ../../ && code/fe/portfolio
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
