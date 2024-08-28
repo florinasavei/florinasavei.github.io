@@ -39,7 +39,13 @@ jobs:
 
       - name: List dist folder
         run: ls dist/apps/landing-page
+
         
+      - name: move back
+        run: cd ../../
+        
+      - name: List current folder
+        run: ls
 
       - name: Deploy to GitHub Pages
         run: yarn nx deploy landing-page
