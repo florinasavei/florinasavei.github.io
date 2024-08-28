@@ -20,7 +20,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Use the version that matches your project
+          node-version: '20.10.0'  # Use the version that matches your project
+
+      - name: corepack enable
+        run: corepack enable
+        
+      - name: corepack prepare yarn
+        run: corepack prepare yarn@4.3.0 --activate
 
       - name: Install dependencies
         run: yarn install
