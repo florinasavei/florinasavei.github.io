@@ -18,7 +18,11 @@
       "@asaveiflorin/core-components": [
         "packages/@asaveiflorin/core-components/src/index.ts"
       ],
-      "core-components": ["packages/src/index.ts"]
+      "@asaveiflorin/personal-profile": [
+        "packages/@asaveiflorin/personal-profile/src/index.ts"
+      ],
+      "core-components": ["packages/src/index.ts"],
+      "personal-profile": ["packages/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

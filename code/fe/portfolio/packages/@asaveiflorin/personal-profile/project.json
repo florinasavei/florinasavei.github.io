@@ -1,0 +1,9 @@
+{
+  "name": "@asaveiflorin/personal-profile",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/@asaveiflorin/personal-profile/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project @asaveiflorin/personal-profile --web",
+  "targets": {}
+}

@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import CoreComponents from './core-components';
+import { CoreComponents } from './core-components';
 
 describe('CoreComponents', () => {
   it('should render successfully', () => {
