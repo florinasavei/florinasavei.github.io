@@ -1,9 +1,9 @@
-import { PersonalProfile } from '@asaveiflorin/personal-profile';
+import { RouterProvider } from './providers';
 
 export function App() {
   return (
     <div>
-      <PersonalProfile />
+      <RouterProvider />
     </div>
   );
 }
