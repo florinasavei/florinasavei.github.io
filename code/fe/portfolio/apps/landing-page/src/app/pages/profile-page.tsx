@@ -1,13 +1,13 @@
 import React from 'react';
 import { PersonalProfile } from '@asaveiflorin/personal-profile';
 
-const LandingPage = () => {
+const ProfilePage = () => {
   return (
     <div>
-      <p>Landing Page</p>
+      <p>Profile Page</p>
       <PersonalProfile />
     </div>
   );
 };
 
-export { LandingPage };
+export { ProfilePage };
